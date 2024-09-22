@@ -1,119 +1,123 @@
 {
-	"name": "@aleclofabbro/next-safe-action",
-	"version": "7.9.3",
-	"private": false,
-	"description": "Type safe and validated Server Actions in your Next.js project.",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.mts",
-	"files": [
-		"dist"
-	],
-	"exports": {
-		".": "./dist/index.mjs",
-		"./hooks": "./dist/hooks.mjs",
-		"./stateful-hooks": "./dist/stateful-hooks.mjs",
-		"./adapters/*": "./dist/adapters/*.mjs"
-	},
-	"typesVersions": {
-		"*": {
-			".": [
-				"./dist/index.d.mts"
-			],
-			"hooks": [
-				"./dist/hooks.d.mts"
-			],
-			"stateful-hooks": [
-				"./dist/stateful-hooks.d.mts"
-			],
-			"adapters/*": [
-				"./dist/adapters/*.d.mts"
-			]
-		}
-	},
-	"funding": [
-		{
-			"type": "github",
-			"url": "https://github.com/sponsors/TheEdoRan"
-		},
-		{
-			"type": "paypal",
-			"url": "https://www.paypal.com/donate/?hosted_button_id=ES9JRPSC66XKW"
-		}
-	],
-	"scripts": {
-		"lint": "tsc && prettier --write . && eslint .",
-		"test": "node --import tsx --test ./src/__tests__/*.test.ts",
-		"build": "tsup",
-		"deploy": "semantic-release"
-	},
-	"keywords": [
-		"next",
-		"nextjs",
-		"react",
-		"rsc",
-		"react server components",
-		"mutation",
-		"action",
-		"actions",
-		"react actions",
-		"next actions",
-		"server actions"
-	],
-	"author": "Edoardo Ranghieri",
-	"license": "MIT",
-	"engines": {
-		"node": ">=18.17"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.2.0",
-		"@sinclair/typebox": "^0.33.3",
-		"@types/node": "^20.14.11",
-		"@types/react": "^18.3.1",
-		"@types/react-dom": "18.3.0",
-		"deepmerge-ts": "^7.1.0",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-define-config": "^2.1.0",
-		"eslint-plugin-react-hooks": "^4.6.2",
-		"next": "14.3.0-canary.42",
-		"prettier": "^3.2.5",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
-		"semantic-release": "^23.0.8",
-		"tsup": "^8.0.2",
-		"tsx": "^4.11.2",
-		"typescript": "^5.5.4",
-		"typescript-eslint": "^7.8.0",
-		"valibot": "^0.36.0",
-		"yup": "^1.4.0",
-		"zod": "^3.23.6"
-	},
-	"peerDependencies": {
-		"@sinclair/typebox": ">= 0.33.3",
-		"next": ">= 14.0.0",
-		"react": ">= 18.2.0",
-		"react-dom": ">= 18.2.0",
-		"valibot": ">= 0.36.0",
-		"yup": ">= 1.0.0",
-		"zod": ">= 3.0.0"
-	},
-	"peerDependenciesMeta": {
-		"zod": {
-			"optional": true
-		},
-		"valibot": {
-			"optional": true
-		},
-		"yup": {
-			"optional": true
-		},
-		"@sinclair/typebox": {
-			"optional": true
-		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/aleclofabbro/next-safe-action.git"
-	}
+  "name": "@aleclofabbro/next-safe-action",
+  "version": "7.9.3",
+  "private": false,
+  "description": "Type safe and validated Server Actions in your Next.js project.",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./hooks": "./dist/hooks.mjs",
+    "./stateful-hooks": "./dist/stateful-hooks.mjs",
+    "./adapters/*": "./dist/adapters/*.mjs"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/index.d.mts"
+      ],
+      "hooks": [
+        "./dist/hooks.d.mts"
+      ],
+      "stateful-hooks": [
+        "./dist/stateful-hooks.d.mts"
+      ],
+      "adapters/*": [
+        "./dist/adapters/*.d.mts"
+      ]
+    }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/TheEdoRan"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/donate/?hosted_button_id=ES9JRPSC66XKW"
+    }
+  ],
+  "scripts": {
+    "lint": "tsc && prettier --write . && eslint .",
+    "test": "node --import tsx --test ./src/__tests__/*.test.ts",
+    "build": "tsup",
+    "deploy": "semantic-release"
+  },
+  "keywords": [
+    "next",
+    "nextjs",
+    "react",
+    "rsc",
+    "react server components",
+    "mutation",
+    "action",
+    "actions",
+    "react actions",
+    "next actions",
+    "server actions"
+  ],
+  "author": "Edoardo Ranghieri",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@sinclair/typebox": "^0.33.3",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "18.3.0",
+    "deepmerge-ts": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "next": "14.3.0-canary.42",
+    "prettier": "^3.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "semantic-release": "^23.0.8",
+    "tsup": "^8.0.2",
+    "tsx": "^4.11.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.8.0",
+    "valibot": "^0.36.0",
+    "yup": "^1.4.0",
+    "zod": "^3.23.6"
+  },
+  "peerDependencies": {
+    "@sinclair/typebox": ">= 0.33.3",
+    "next": ">= 14.0.0",
+    "react": ">= 18.2.0",
+    "react-dom": ">= 18.2.0",
+    "valibot": ">= 0.36.0",
+    "yup": ">= 1.0.0",
+    "zod": ">= 3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    },
+    "valibot": {
+      "optional": true
+    },
+    "yup": {
+      "optional": true
+    },
+    "@sinclair/typebox": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleclofabbro/next-safe-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aleclofabbro/next-safe-action/issues"
+  },
+  "homepage": "https://github.com/aleclofabbro/next-safe-action#readme"
 }
