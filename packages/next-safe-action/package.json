@@ -1,6 +1,6 @@
 {
-	"name": "next-safe-action",
-	"version": "0.0.0-development",
+	"name": "@aleclofabbro/next-safe-action",
+	"version": "7.9.3",
 	"private": false,
 	"description": "Type safe and validated Server Actions in your Next.js project.",
 	"main": "./dist/index.mjs",
@@ -114,6 +114,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/TheEdoRan/next-safe-action.git"
+		"url": "https://github.com/aleclofabbro/next-safe-action.git"
 	}
 }
